@@ -1,9 +1,17 @@
 {
-  "name": "ts-bundle-test",
+  "name": "@song/ts-bundle-test",
   "author": "eunjeongsong",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "description": "Bundling TypeScript test project",
+  "keywords": [
+    "babel",
+    "typescript"
+  ],
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -13,5 +21,12 @@
   },
   "scripts": {
     "build": "npx babel src --out-dir lib  --extensions '.ts' && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eunjeongsong/ts-bundle-test.git"
+  },
+  "publishConfig": {
+    "eunejognsong:registry": "https://npm.pkg.github.com/"
   }
 }
